@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "default_locale": "en",
   "description": "__MSG_ext_desc__",
-  "homepage_url": "https://github.com/YOUR_USERNAME/open-anywhere-for-shazam",
+  "homepage_url": "https://github.com/polvora/open-anywhere-for-shazam",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

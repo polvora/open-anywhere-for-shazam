@@ -70,32 +70,12 @@ browser-specific APIs — so the same build runs everywhere:
 3. (Temporary add-ons are removed on restart; permanent install requires signing
    via addons.mozilla.org.)
 
-## Set up the Git repository
-
-**Option A — clone the bundle (includes the initial commit already made):**
+## Get the source
 
 ```bash
-git clone open-anywhere-for-shazam.bundle open-anywhere-for-shazam
+git clone https://github.com/polvora/open-anywhere-for-shazam.git
 cd open-anywhere-for-shazam
-git remote add origin https://github.com/YOUR_USERNAME/open-anywhere-for-shazam.git
-git push -u origin main
 ```
-
-**Option B — start fresh** with the helper script (`init-repo.bat` on Windows,
-or `bash init-repo.sh` on macOS/Linux), or manually:
-
-```bash
-git init
-git add -A
-git commit -m "feat: Open Anywhere for Shazam v1.0.0"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/open-anywhere-for-shazam.git
-git push -u origin main
-```
-
-> `open-anywhere-for-shazam.bundle` is a portable snapshot of the repo with
-> history. It exists because Git can't be initialized directly inside this
-> synced folder.
 
 ## Publishing
 
@@ -107,7 +87,7 @@ git push -u origin main
 
 Before publishing:
 
-1. Replace `YOUR_USERNAME` in `manifest.json` (`homepage_url`) and the repo links.
+1. If you fork this, update `homepage_url` in `manifest.json` and the repo links to your GitHub user.
 2. Update the copyright name in `LICENSE` if needed.
 3. Zip the folder contents (not the parent folder) and upload to each store.
    Each store has its own review; the same zip works for all of them.
