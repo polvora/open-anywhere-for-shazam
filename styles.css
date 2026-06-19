@@ -1,0 +1,85 @@
+/* Open Anywhere for Shazam — estilos de los botones inyectados */
+
+#sy-yt-buttons.sy-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 14px 0 4px;
+  width: 100%;
+  max-width: 385px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+#sy-yt-buttons .sy-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  color: inherit;
+}
+
+#sy-yt-buttons .sy-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#sy-yt-buttons .sy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.08s ease, filter 0.15s ease, box-shadow 0.15s ease;
+  white-space: nowrap;
+}
+
+#sy-yt-buttons .sy-btn:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+#sy-yt-buttons .sy-btn:active {
+  transform: translateY(1px);
+}
+
+#sy-yt-buttons .sy-btn svg {
+  display: block;
+  flex: 0 0 auto;
+}
+
+#sy-yt-buttons .sy-yt {
+  background: #ff0000;
+}
+#sy-yt-buttons .sy-ytm {
+  background: #ff0033;
+}
+#sy-yt-buttons .sy-sp {
+  background: #1db954;
+}
+
+/* Fallback flotante si no se encuentra el contenedor de Shazam */
+#sy-yt-buttons.sy-floating {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  background: rgba(20, 20, 22, 0.92);
+  padding: 12px 14px;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  max-width: none;
+}
+#sy-yt-buttons.sy-floating .sy-title {
+  color: #fff;
+}

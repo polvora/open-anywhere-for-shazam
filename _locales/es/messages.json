@@ -1,0 +1,11 @@
+{
+  "ext_name": {
+    "message": "Open Anywhere for Shazam"
+  },
+  "ext_desc": {
+    "message": "Agrega botones de YouTube, YouTube Music y Spotify en las páginas de canciones de Shazam, junto al de Apple Music."
+  },
+  "listen_on": {
+    "message": "Escuchar en:"
+  }
+}

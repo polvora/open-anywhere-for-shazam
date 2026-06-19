@@ -1,0 +1,14 @@
+# Build artifacts
+*.zip
+*.xpi
+*.bundle
+dist/
+web-ext-artifacts/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+node_modules/
